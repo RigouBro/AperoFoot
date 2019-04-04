@@ -17,7 +17,7 @@ function menu_nav()
 {
 	echo "<header>";
     echo "<div class=\"flex_div_principal\">";
-    echo "<img class=\"logo_site\" src=\"logo.svg\" alt=\"logo apero foot\"/>";
+    echo "<img class=\"logo_site\" src=\"logo2.png\" alt=\"logo apero foot\"/>";
 	echo "<nav class=\"menu_principal\">";
 	echo "<a href=\"accueil.php\" class=\"lien_menu_principal\">Accueil</a>";
 	echo "<a href=\"accueil_recherche.php\" class=\"lien_menu_principal\"> <i class=\"fas fa-search\"></i> Recherche</a>";
