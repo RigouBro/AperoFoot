@@ -162,3 +162,20 @@ footer .footer_haut .menu_footer {
 	text-align: center;
 	margin: auto;
 }
+
+/** Style page de connexion **/
+
+.tableau_formulaire {
+	max-width: 1016px;
+	display: flex;
+	margin: auto;
+}
+
+.col_form {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+
+.membre_formulaire {
+	display: block;
+}
