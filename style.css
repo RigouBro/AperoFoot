@@ -1,0 +1,164 @@
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	margin : 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Style Menu principal du site */
+header {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 999999;
+}
+
+header .flex_div_principal {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+header .logo_site {
+	margin-left: 80px;
+	height : 100px;
+}
+
+.menu_principal {
+	margin-right: 60px;
+	display: flex;
+}
+
+.menu_principal .lien_menu_principal {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #00AFF5;
+}
+
+.menu_principal .lien_menu_principal i {
+	padding-right: 5px;
+}
+
+.menu_principal .lien_menu_principal::visited {
+	color: #00AFF5;
+}
+
+/* Style du main content */
+
+main {
+	padding-top: 125px;
+}
+
+/* Style du footer */
+
+footer {
+	margin-top: 30px;
+}
+
+footer .footer_bas {
+	background-color: #00AFF5;
+}
+
+footer .footer_bas .thanks {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 1016px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+footer .footer_haut {
+	background-color: #D3D3D3;
+}
+
+
+footer .footer_haut .menu_footer {
+	max-width: 1016px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	text-align: left;
+}
+
+#nav_footer {
+	column-count: 3;
+	flex: 3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#nav_footer ul {
+	margin: 0;
+	list-style: none;
+}
+
+#nav_footer ul .li_footer {
+	margin-bottom: 8px;
+	line-height: 24px;
+}
+
+#nav_footer ul .li_footer a {
+	color : #293133;
+	font-weight: 600;
+}
+
+/* Style page d'accueil */
+
+.banner_accueil {
+	position: relative;
+}
+
+.image_accueil {
+	background-image: url("stade.jpg");
+	background-size: cover;
+	height: 500px;
+	background-position: 50% 50%;
+}
+
+.title_accueil {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+.title_accueil h1 {
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.title_accueil a {
+	background-color: #00AFF5;
+	color: #FFFFFF;
+	border-radius: 30px;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.article_accueil {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 1016px;
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
