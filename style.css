@@ -19,6 +19,7 @@ header {
 	position: fixed;
 	width: 100%;
 	background-color: #FFFFFF;
+	z-index: 999999;
 }
 
 header .flex_div_principal {
