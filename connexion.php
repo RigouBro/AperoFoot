@@ -14,18 +14,22 @@ menu_nav();
 		<h3 class="titre_formulaire">Connexion</h3>
 		<form class="form_connexion" method="post">
 			<p class="membre_formulaire">
+				<form action="traitement_connexion.php" method="post">
 				<label for="adresse_mail">
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
 				<input type="text" class="input_texte" name="adresse_mail" id="adresse_mail" autocomplete="apero@foot.fr" value>
+				</form>
 			</p>
 			<p class="membre_formulaire">
+				<form action="traitement_connexion.php" method="post">
 				<label for="password">
 					Mot de passe
 					<span class="required">*</span>
 				</label>
-				<input type="password" class="input_texte" name="password" id="password" autocomplete="password">
+				<input type="password" class="input_texte" name="password" id="password">
+				</form>
 			</p>
 			<p class="membre_formulaire">
 				<button type="submit" class="bouton_formulaire" name="login" value="identification">Identification</button>
