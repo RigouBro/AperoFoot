@@ -1,11 +1,14 @@
 <?php
 include("mise_en_page.php");
 
-entete("Inscription/Connexion");
+entete();
 
 menu_nav();
 
 ?>
+<div class="titre_div">
+	<h1 class="titre_page">Mon compte</h1>
+</div>
 <div class="tableau_formulaire">
 	<div class="col1 col_form">
 		<h3 class="titre_formulaire">Connexion</h3>

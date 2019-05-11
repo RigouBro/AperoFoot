@@ -59,7 +59,7 @@ header .logo_site {
 /* Style du main content */
 
 main {
-	padding-top: 125px;
+	padding-top: 140px;
 }
 
 /* Style du footer */
@@ -174,8 +174,54 @@ footer .footer_haut .menu_footer {
 .col_form {
 	max-width: 50%;
 	flex-basis: 50%;
+	padding: 0 30px;
 }
 
-.membre_formulaire {
+.membre_formulaire label {
 	display: block;
+	font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.membre_formulaire input {
+	border-radius: 5px;
+    border: 1px solid #ddd;
+	width: 100%;
+	height: 25px;
+	padding-left: 5px;
+}
+
+.membre_formulaire input::hover {
+	border-color: #00AFF5;
+}
+
+
+.membre_formulaire button {
+	border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #00AFF5;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.titre_div {
+	display: flex;
+	justify-content: center;
+	background-color: #00AFF5;
+	margin-bottom: 10px;
+}
+
+.titre_page {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.col2 {
+	border-left : 1px solid #ececec;
 }
