@@ -220,8 +220,57 @@ footer .footer_haut .menu_footer {
 	color: #FFFFFF;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	padding: 10px;
 }
 
 .col2 {
 	border-left : 1px solid #ececec;
+}
+
+/** Page de proposition de match **/
+
+.content_form {
+	width: 1080px;
+	margin: auto;
+	text-align: center;
+}
+
+.match_prop {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content_form .membre_formulaire label {
+	font-size: 1em;
+	font-weight: bold;
+	display: initial;
+}
+
+.adresse_formulaire {
+	text-align: left;
+	margin-left: 120px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.membre_adresse {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex_adresse label {
+	font-size: 1em;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.content_form input {
+	margin-top: 5px;
+}
+
+#commentaires {
+	margin-top: 10px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
 }
