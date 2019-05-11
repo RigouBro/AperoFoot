@@ -5,7 +5,7 @@
     $stream_context = stream_context_create($reqPrefs);
     $response = file_get_contents($uri, false, $stream_context);
     $matches = json_decode($response);
-	foreach($matches->matches as $val){
-		echo "<option value = " ; echo $val->homeTeam->name; echo " - "; echo $val->awayTeam->name; echo "</br>";}
-		
+    foreach($matches->matches as $val){
+        echo "<option value = \"" ; echo $val->homeTeam->name; echo " - "; echo $val->awayTeam->name; echo "\"/>";}
+
 ?>
