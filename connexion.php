@@ -12,14 +12,13 @@ menu_nav();
 <div class="tableau_formulaire">
 	<div class="col1 col_form">
 		<h3 class="titre_formulaire">Connexion</h3>
-		<form class="form_connexion" method="post">
 			<p class="membre_formulaire">
 				<form action="traitement_connexion.php" method="post">
 				<label for="adresse_mail">
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="adresse_mail" id="adresse_mail" autocomplete="apero@foot.fr" value>
+				<input type="text" class="input_texte" name="adresse_mail" id="adresse_mail" autocomplete="apero@foot.fr" required>
 				</form>
 			</p>
 			<p class="membre_formulaire">
@@ -28,47 +27,53 @@ menu_nav();
 					Mot de passe
 					<span class="required">*</span>
 				</label>
-				<input type="password" class="input_texte" name="password" id="password">
+				<input type="password" class="input_texte" name="password" id="password" required>
 				</form>
 			</p>
 			<p class="membre_formulaire">
-				<button type="submit" class="bouton_formulaire" name="login" value="identification">Identification</button>
+				<button type="submit" class="bouton_formulaire" name="login" value="identification" required>Identification</button>
 			</p>
-		</form>
 	</div>
 	<div class="col2 col_form">
 		<h3 class="titre_formulaire">Inscription</h3>
-		<form class="form_inscription" method="post">
 			<p class="membre_formulaire">
+				<form action="traitement_ajout.php" method="post">
 				<label for="adresse_mail">
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="adresse_mail" id="reg_adresse_mail" autocomplete="apero@foot.fr" value>
+				<input type="text" class="input_texte" name="adresse_mail" id="reg_adresse_mail" autocomplete="apero@foot.fr" required>
+			</form>
 			</p>
 			<p class="membre_formulaire">
+				<form action="traitement_ajout.php" method="post">
 				<label for="nom">
 					Nom
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="nom" id="nom" autocomplete="Apero" value>
+				<input type="text" class="input_texte" name="nom" id="nom" autocomplete="Apero" required>
+			</form>
 			</p>
 			<p class="membre_formulaire">
+				<form action="traitement_ajout.php" method="post">
 				<label for="prenom">
 					Prénom
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="prenom" id="prenom" autocomplete="Foot" value>
+				<input type="text" class="input_texte" name="prenom" id="prenom" autocomplete="Foot" required>
+			</form>
 			</p>
 			<p class="membre_formulaire">
+				<form action="traitement_ajout.php" method="post">
 				<label for="password">
 					Mot de passe
 					<span class="required">*</span>
 				</label>
-				<input type="password" class="input_texte" name="password" id="reg_password" autocomplete="password">
+				<input type="password" class="input_texte" name="password" id="reg_password" autocomplete="password" required>
+			</form>
 			</p>
 			<p class="membre_formulaire">
-				<button type="submit" class="bouton_formulaire" name="login" value="S'enregistrer">S'enregistrer</button>
+				<button type="submit" class="bouton_formulaire" name="login" value="S'enregistrer" required>S'enregistrer</button>
 			</p>
 		</form>
 	</div>
