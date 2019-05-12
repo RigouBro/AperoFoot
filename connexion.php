@@ -18,7 +18,7 @@ menu_nav();
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="adresse_mail" id="adresse_mail" autocomplete="apero@foot.fr" required>
+				<input type="text" class="input_texte" name="adresse_mail" id="adresse_mail" autocomplete="apero@foot.fr" >
 				</form>
 			</p>
 			<p class="membre_formulaire">
@@ -27,11 +27,11 @@ menu_nav();
 					Mot de passe
 					<span class="required">*</span>
 				</label>
-				<input type="password" class="input_texte" name="password" id="password" required>
+				<input type="password" class="input_texte" name="password" id="password">
 				</form>
 			</p>
 			<p class="membre_formulaire">
-				<button type="submit" class="bouton_formulaire" name="login" value="identification" required>Identification</button>
+				<button type="submit" class="bouton_formulaire" name="login" value="identification">Identification</button>
 			</p>
 	</div>
 	<div class="col2 col_form">
@@ -42,7 +42,7 @@ menu_nav();
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="adresse_mail" id="reg_adresse_mail" autocomplete="apero@foot.fr" required>
+				<input type="text" class="input_texte" name="adresse_mail" id="reg_adresse_mail" autocomplete="apero@foot.fr" >
 			</form>
 			</p>
 			<p class="membre_formulaire">
@@ -51,7 +51,7 @@ menu_nav();
 					Nom
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="nom" id="nom" autocomplete="Apero" required>
+				<input type="text" class="input_texte" name="nom" id="nom" autocomplete="Apero">
 			</form>
 			</p>
 			<p class="membre_formulaire">
@@ -60,7 +60,7 @@ menu_nav();
 					Prénom
 					<span class="required">*</span>
 				</label>
-				<input type="text" class="input_texte" name="prenom" id="prenom" autocomplete="Foot" required>
+				<input type="text" class="input_texte" name="prenom" id="prenom" autocomplete="Foot">
 			</form>
 			</p>
 			<p class="membre_formulaire">
@@ -69,11 +69,11 @@ menu_nav();
 					Mot de passe
 					<span class="required">*</span>
 				</label>
-				<input type="password" class="input_texte" name="password" id="reg_password" autocomplete="password" required>
+				<input type="password" class="input_texte" name="password" id="reg_password" autocomplete="password">
 			</form>
 			</p>
 			<p class="membre_formulaire">
-				<button type="submit" class="bouton_formulaire" name="login" value="S'enregistrer" required>S'enregistrer</button>
+				<button type="submit" class="bouton_formulaire" name="login" value="S'enregistrer">S'enregistrer</button>
 			</p>
 		</form>
 	</div>
