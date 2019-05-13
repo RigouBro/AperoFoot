@@ -2,7 +2,10 @@
 include("mise_en_page.php");
 
 entete();
-
+if(!isset($_POST['adresse_mail']) OR !isset($_POST['password'])) {
+	header('Location: connexion.php');
+	exit();
+}
 
 
 $adresse_mail = $_POST['adresse_mail'];
