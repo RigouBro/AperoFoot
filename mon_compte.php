@@ -63,7 +63,7 @@ if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])) {
 
         <div class="for_connect">
         <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir rechercher un match</p>
-        <a href="mon_compte.php" class="bouton_recherche">Inscription/Connexion</a>
+        <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
     </div>
 
     <?php

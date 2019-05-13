@@ -349,3 +349,50 @@ footer .footer_haut .menu_footer {
 	font-weight: bold;
 	margin-top: 30px;
 }
+
+.rectangle_annonce {
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titre_annonce {
+    border-bottom: 1px solid #ddd;
+}
+
+.nom_match {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nom_annonce {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.flex_annonce {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.intro_nom {
+    padding-right: 5px;
+}
+
+.commentaires_annonce {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.bouton_annonce {
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
