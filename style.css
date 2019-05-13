@@ -400,3 +400,20 @@ footer .footer_haut .menu_footer {
 a:link, button {
     cursor: pointer;
 }
+
+.div_validation {
+    margin-top: 40px;
+}
+
+.div_reservation {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.valider_reservation span {
+    font-size: 1.2em;
+}
+
+.validation_com {
+    margin-bottom: 40px;
+}
