@@ -6,12 +6,15 @@ include("mise_en_page.php");
 entete();
 
 
-
+if(!isset($_POST['nom']) OR !isset($_POST['prenom']) OR !isset($_POST['password']) OR !isset($_POST['email'])) {
+	header('Location: connexion.php');
+	exit();
+}
 
 
 $nom=$_POST['nom'];
 $prenom=$_POST['prenom'];
-$password=$_POST['password'];
+$password=$_POST['passowrd'];
 $email=$_POST['email'];
 
 try
@@ -37,6 +40,7 @@ $req->execute(array(
 echo 'L utilisateur a bien été ajouté !';
 $req->closeCursor();
 header('Location:connexion.php');
+exit();
 
 pied();
 ?>
