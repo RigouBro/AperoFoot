@@ -4,12 +4,21 @@
 <div class="menu_footer">
 <nav id="nav_footer">
 <ul>
-<li class="li_footer"> <a href="/accueil.php">Accueil</a></li>
-<li class="li_footer"> <a href="/accueil_proposition.php">Proposer un match</a></li>
-<li class="li_footer"> <a href="/accueil_recherche.php">Rechercher un match</a></li>
-<li class="li_footer"> <a href="/mon_compte.php">Mon compte</a></li>
-<li class="li_footer"> <a href="/connexion.php">Se connecter</a></li>
-<li class="li_footer"> <a href="https://www.ensiie.fr/">Nous recrutons</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
+<li class="li_footer"> <a href="#">Lorem ipsum</a></li>
 </ul>
 </nav>
 </div>

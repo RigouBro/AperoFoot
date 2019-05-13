@@ -1,10 +1,8 @@
 <?php
 include("mise_en_page.php");
+entete();
 
-entete("Recherche");
-
-menu_nav();
+echo 'Mauvais pseudo et/ou password';
 
 pied();
 
-?>

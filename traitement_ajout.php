@@ -7,16 +7,16 @@ entete();
 
 
 
+if (isset($_POST['nom']) AND isset($_POST['prenom']) AND isset($_POST['password']) AND isset($_POST['email']) ){
+	 $nom = $_POST['nom'];
+ $prenom = $_POST['prenom']; 
+$passowrd = $_POST['password']; 
+ $email = $_POST['email']; 
 
-
-$nom=$_POST['nom'];
-$prenom=$_POST['prenom'];
-$password=$_POST['password'];
-$email=$_POST['email'];
 
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=pdo;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=aperofoot;charset=utf8','root','');
 }
 catch(Exception $e)
 {
@@ -36,7 +36,9 @@ $req->execute(array(
 
 echo 'L utilisateur a bien été ajouté !';
 $req->closeCursor();
+}
 header('Location:connexion.php');
+exit();
 
 pied();
 ?>
