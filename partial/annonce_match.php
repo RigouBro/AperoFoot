@@ -39,7 +39,7 @@ function annonce_match($nommatch = 'Ajaccio - Bastia', $nomhote = 'Francis', $ad
 
     <div class="bouton_annonce">
 
-        <a href="validation_annonce.php" class="bouton_recherche bouton_valider">Réserver</a>
+        <a href="validation_annonce.php?match=<?php echo $nommatch ?>&amp;nom=<?php echo $nomhote ?>" class="bouton_recherche bouton_valider">Réserver</a>
 
     </div>
 
