@@ -396,3 +396,7 @@ footer .footer_haut .menu_footer {
     margin-right: 15px;
     margin-bottom: 35px;
 }
+
+a:link, button {
+    cursor: pointer;
+}

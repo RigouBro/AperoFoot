@@ -11,7 +11,7 @@ entete();
 
 $nom=$_POST['nom'];
 $prenom=$_POST['prenom'];
-$password=$_POST['passowrd'];
+$password=$_POST['password'];
 $email=$_POST['email'];
 
 try
