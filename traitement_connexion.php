@@ -5,21 +5,27 @@
 
 include("mise_en_page.php");
 entete();
-if (isset($_POST['adresse_mail']) AND isset($_POST['password'])){
+
+if(!isset($_POST['adresse_mail']) OR !isset($_POST['password'])) {
+	header('Location: connexion.php');
+	exit();
+}
+
 $adresse_mail = $_POST['adresse_mail'];
 $password= $_POST['password'];
 
 session_start();
 $ok=0;
 
-$bdd = new PDO('mysql: host=localhost ;dbname=aperofoot;charset=utf8', 'root', '');
+$bdd = new PDO('mysql: host=localhost ;dbname=aperofoot ;charset=utf8', 'root', '');
 
 
 
 
 $requete =  $bdd->query('SELECT id FROM user WHERE email = "'.$adresse_mail.'" && password = "'.$password.'"');
 if ( $requete -> rowCount() == 0){
-header('Location: erreur.php');
+echo 'Mauvais pseudo ou mot de passe';
+header('Location: connexion.php');
 exit();
 }
 else{
@@ -33,8 +39,7 @@ if ($ok == 1){
 }
 $requete->closeCursor();
 header('Location: mon_compte.php');
-}
-header('Location: connexion.php');
+exit();
 
 
 
