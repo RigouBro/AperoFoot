@@ -7,12 +7,15 @@
 <a href="accueil_proposition.php" class="lien_menu_principal">Proposer un match</a>
 <?php
     if (isset($_SESSION['id']) and isset($_SESSION['pseudo'])){
-	   echo "<a href=\"mon_compte.php\" class=\"lien_menu_principal\">Mon compte</a>";
+        ?>
+        <a href="mon_compte.php" class="lien_menu_principal">Mon compte</a>
+        <?php
     }
     else {
-    echo "<a href=\"connexion.php\" class=\"lien_menu_principal\">Inscription/Connexion</a>";
+        ?>
+        <a href="connexion.php" class="lien_menu_principal">Inscription/Connexion</a>
+        <?php
     }
-
 ?>
 </nav>
 </div>
