@@ -21,11 +21,13 @@ $requete =  $bdd->exec('DELETE FROM user WHERE email = "'.$adresse_mail.'" && pa
 if( $requete == 1){
 	echo 'Votre compte a bien été supprimé';
 	header('Loaction:accueil.php');
+	exit();
 }
 
 else {
 	echo 'Une erreur est survenue';
 	header('Loaction: connexion.php');
+	exit();
 }
 
 
