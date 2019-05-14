@@ -7,6 +7,8 @@ SET time_zone = "+00:00";
 -- Base de données :  `aperofoot`
 --
 
+CREATE DATABASE IF NOT EXISTS aperofoot;
+
 -- --------------------------------------------------------
 
 --
