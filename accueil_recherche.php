@@ -6,6 +6,12 @@ entete();
 
 menu_nav();
 
+if (isset($_COOKIE['id'])){
+    session_start();
+    $_SESSION['id'] = $_COOKIE['pseudo'];
+
+}
+
 ?>
 
 <div class="titre_div">
@@ -14,7 +20,7 @@ menu_nav();
 
 
 <?php
-if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])){
+if (isset($_SESSION['id']){
     ?>
     
 

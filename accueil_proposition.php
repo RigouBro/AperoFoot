@@ -4,6 +4,13 @@ include("mise_en_page.php");
 entete();
 
 menu_nav();
+
+if (isset($_COOKIE['id'])){
+    session_start();
+    $_SESSION['id'] = $_COOKIE['pseudo'];
+
+}
+
 ?>
 
     <div class="titre_div">
@@ -12,7 +19,7 @@ menu_nav();
 
 
 <?php
-if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])){
+if (isset($_SESSION['id']){
 ?>
     <div class="content_form">
         <h2 class="titre_proposition">Quoi de mieux que des amis pour regarder un match ?</h2>

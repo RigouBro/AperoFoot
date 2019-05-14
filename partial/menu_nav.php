@@ -6,7 +6,14 @@
 <a href="accueil_recherche.php" class="lien_menu_principal"> <i class="fas fa-search"></i> Recherche</a>
 <a href="accueil_proposition.php" class="lien_menu_principal">Proposer un match</a>
 <?php
-    if (isset($_SESSION['id']) and isset($_SESSION['pseudo'])){
+
+     if (isset($_COOKIE['id'])){
+    session_start();
+    $_SESSION['id'] = $_COOKIE['pseudo'];
+
+}
+     
+    if (isset($_SESSION['id']){
         ?>
         <a href="mon_compte.php" class="lien_menu_principal">Mon compte</a>
         <?php

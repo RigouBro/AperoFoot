@@ -34,11 +34,7 @@ $ok=1;
 }
 
 if ($ok == 1){
-    session.use_cookies 1 
-    session.use_only_cookies 1 
-    session.use_trans_sid 0
-	$_SESSION['id']=$requete->fetch()['n_user'];
-	$_SESSION['adresse_mail']= $adresse_mail;
+    setcookie('id',$_adresse_mail,time() + 365*24*3600,null,null,false,true);
 }
 $requete->closeCursor();
 header('Location: mon_compte.php');
