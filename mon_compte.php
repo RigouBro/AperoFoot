@@ -13,18 +13,8 @@ menu_nav();
 <?php
 if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])) {
     ?>
-
-    <div class="for_connect">
-        <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir rechercher un match</p>
-        <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
-    </div>
-
-    <?php
-}
-    else {
-        ?>
-
-        <h2 class="title_recherche">Bonjour, bienvenue sur votre compte</h2>
+    
+       <h2 class="title_recherche">Bonjour, bienvenue sur votre compte</h2>
 
         <div class="tableau_formulaire">
             <div class="col1 col_form">
@@ -89,6 +79,17 @@ if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])) {
                 </div>
 
         </div>
+
+    <?php
+}
+    else {
+        ?>
+
+    <div class="for_connect">
+        <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir rechercher un match</p>
+        <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
+    </div>
+
 
     <?php
 

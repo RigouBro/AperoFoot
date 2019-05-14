@@ -34,6 +34,9 @@ $ok=1;
 }
 
 if ($ok == 1){
+    session.use_cookies 1 
+    session.use_only_cookies 1 
+    session.use_trans_sid 0
 	$_SESSION['id']=$requete->fetch()['n_user'];
 	$_SESSION['adresse_mail']= $adresse_mail;
 }
