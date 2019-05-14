@@ -5,18 +5,14 @@ entete("Accueil");
 
 menu_nav();
 
-if (isset($_COOKIE['id'])){
-    session_start();
-    $_SESSION['id'] = $_COOKIE['pseudo'];
 
-}
 ?>
 <div class="titre_div">
 	<h1 class="titre_page">Mon compte</h1>
 </div>
 
 <?php
-if (isset($_SESSION['id'])) {
+    if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
     ?>
     
        <h2 class="title_recherche">Bonjour, bienvenue sur votre compte</h2>

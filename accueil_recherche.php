@@ -6,11 +6,6 @@ entete();
 
 menu_nav();
 
-if (isset($_COOKIE['id'])){
-    session_start();
-    $_SESSION['id'] = $_COOKIE['pseudo'];
-
-}
 
 ?>
 
@@ -20,7 +15,7 @@ if (isset($_COOKIE['id'])){
 
 
 <?php
-    if (isset($_SESSION['id'])){
+    if (isset($_SESSION['id']) && isset($_SESSION['password'])){
     ?>
     
 

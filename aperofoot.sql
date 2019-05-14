@@ -19,6 +19,7 @@ DROP TABLE IF EXISTS `proposition`;
 CREATE TABLE IF NOT EXISTS `proposition` (
   `nommatch` varchar(50) NOT NULL,
   `n_user` int(11) NOT NULL,
+  `place` int(11) NOT NULL,
   `commentaires` varchar(1000) NOT NULL,
   `rue` varchar(100) NOT NULL,
   `ville` varchar(50) NOT NULL,

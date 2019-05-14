@@ -30,13 +30,13 @@ exit();
 }
 else{
 echo 'Vous voilà connecté';
-$ok=1;
+
+$_SESSION['id']=$adresse_mail
+$_SESSION['password']=$password
+
 }
 
-if ($ok == 1){
-    setcookie('id',$_adresse_mail,time() + 365*24*3600,null,null,false,true);
-}
-$requete->closeCursor();
+
 header('Location: mon_compte.php');
 exit();
 

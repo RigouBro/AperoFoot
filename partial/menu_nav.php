@@ -7,13 +7,9 @@
 <a href="accueil_proposition.php" class="lien_menu_principal">Proposer un match</a>
 <?php
 
-     if (isset($_COOKIE['id'])){
-    session_start();
-    $_SESSION['id'] = $_COOKIE['pseudo'];
-
-}
+     session_start();
      
-     if (isset($_SESSION['id'])){
+if (isset($_SESSION['id']) && isset($_SESSION['password'])){
         ?>
         <a href="mon_compte.php" class="lien_menu_principal">Mon compte</a>
         <?php

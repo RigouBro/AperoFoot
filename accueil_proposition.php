@@ -5,11 +5,6 @@ entete();
 
 menu_nav();
 
-if (isset($_COOKIE['id'])){
-    session_start();
-    $_SESSION['id'] = $_COOKIE['pseudo'];
-
-}
 
 ?>
 
@@ -19,19 +14,20 @@ if (isset($_COOKIE['id'])){
 
 
 <?php
-    if (isset($_SESSION['id'])){
+    if (isset($_SESSION['id']) && isset($_SESSION['password'])
+    {
 ?>
     <div class="content_form">
         <h2 class="titre_proposition">Quoi de mieux que des amis pour regarder un match ?</h2>
 
-        <form class="form_proposition" method="post">
+        <form class="form_proposition" action="traitement_proposition.php" method="post">
             <div class="match_prop">
                 <p class="membre_formulaire">
                     <label for="match">
                         Je propose le match :
                         <span class="required">*</span>
                     </label>
-                    <input list="match" type="text" class="choix_match">
+                    <input list="match" type="text" class="choix_match" name="nommatch">
                     <datalist id="match">
                         <?php
                         include("partial/listematchs.php");
@@ -43,7 +39,7 @@ if (isset($_COOKIE['id'])){
                         Nombre de places sur le canapé
                         <span class="required">*</span>
                     </label>
-                    <select id="place">
+                    <select id="place" name="place">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -62,14 +58,14 @@ if (isset($_COOKIE['id'])){
                             Numéro et nom de rue :
                             <span class="required">*</span>
                         </label>
-                        <input type="text" id="rue">
+                        <input type="text" id="rue" name="rue">
                     </div>
                     <div class="flex_adresse">
                         <label for="ville" class="ville_prop">
                             Ville :
                             <span class="required">*</span>
                         </label>
-                        <input type="text" id="ville">
+                        <input type="text" id="ville" name="ville">
                     </div>
                 </div>
             </div>
@@ -77,7 +73,7 @@ if (isset($_COOKIE['id'])){
                 <label for="commentaires" class="commentaires_prop">
                     Commentaires :
                 </label>
-                <textarea id="commentaires" rows="10" cols="150" maxlength="1000">Informations complémentaires, que souhaitez vous qu'ils apportent pour l'apéro, ...</textarea>
+                <textarea id="commentaires" rows="10" cols="150" maxlength="1000" name="commentaires">Informations complémentaires, que souhaitez vous qu'ils apportent pour l'apéro, ...</textarea>
             </p>
 
             <p class="membre_formulaire">
