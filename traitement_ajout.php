@@ -1,9 +1,11 @@
 <?php
-
-
 include("mise_en_page.php");
 
 entete();
+
+menu_nav();
+
+
 
 
 if(!isset($_POST['nom']) OR !isset($_POST['prenom']) OR !isset($_POST['password']) OR !isset($_POST['adresse_mail'])) {
@@ -37,5 +39,6 @@ $req->execute(array(
 
 echo 'L utilisateur a bien été ajouté !';
 $req->closeCursor();
+
 pied();
 ?>
