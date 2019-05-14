@@ -16,10 +16,10 @@ menu_nav();
 <?php
 if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])){
     ?>
-
+    
 
     <div class="for_connect recherche_match">
-        <form  action="traitement_match.php" method="post">
+        <form  action="ajout_match.php" method="post">
             <label for="recherche_match"> Quel match voulez-vous voir ? </label>
             <input list="match" type="text" class="choix_match" name="match">
             <datalist id="match">
@@ -45,6 +45,7 @@ else {
         <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir rechercher un match</p>
         <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
     </div>
+    
 
     <?php
 }

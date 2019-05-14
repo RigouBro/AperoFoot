@@ -14,16 +14,6 @@ menu_nav();
 <?php
 if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])){
 ?>
-
-    <div class="for_connect">
-        <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir proposer un match</p>
-        <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
-    </div>
-
-    <?php
-}
-else {
-    ?>
     <div class="content_form">
         <h2 class="titre_proposition">Quoi de mieux que des amis pour regarder un match ?</h2>
 
@@ -90,6 +80,16 @@ else {
         </form>
 
     </div>
+    <?php
+}
+else {
+    ?>
+
+    <div class="for_connect">
+        <p class="indication_connect"> Veuillez vous connecter ou vous inscrire afin de pouvoir proposer un match</p>
+        <a href="connexion.php" class="bouton_recherche">Inscription/Connexion</a>
+    </div>
+                            
 
     <?php
 }
