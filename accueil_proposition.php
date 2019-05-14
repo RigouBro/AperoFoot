@@ -41,7 +41,7 @@ else {
                         ?>
                     </datalist>
                 </p>
-                <p class="membre_formulaire">s
+                <p class="membre_formulaire">
                     <label for="place">
                         Nombre de places sur le canapé
                         <span class="required">*</span>
