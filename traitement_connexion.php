@@ -22,8 +22,8 @@ $bdd = new PDO('mysql: host=localhost ; dbname=aperofoot; charset=utf8', 'root',
 
 
 
-$requete =  $bdd->query('SELECT id FROM user WHERE email = "'.$adresse_mail.'" && password = "'.$password.'"');
-if ( $requete -> columnCount() == 0){
+$requete =  $bdd->query('SELECT n_user FROM user WHERE email = "'.$adresse_mail.'" AND password = "'.$password.'"');
+if ( $requete -> fetch()  == false){
 echo 'Mauvais pseudo ou mot de passe';
 header('Location: connexion.php');
 exit();
@@ -34,7 +34,7 @@ $ok=1;
 }
 
 if ($ok == 1){
-	$_SESSION['id']=$requete->fetch()['id'];
+	$_SESSION['id']=$requete->fetch()['n_user'];
 	$_SESSION['adresse_mail']= $adresse_mail;
 }
 $requete->closeCursor();
