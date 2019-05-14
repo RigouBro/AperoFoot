@@ -82,7 +82,7 @@ if (isset($_SESSION['id']) and isset($_SESSION['adresse_mail'])) {
 
                     <script type="text/javascript">
                         document.getElementById("ButtonRecherche").onclick = function () {
-                            location.href = "accueil_recherche.php";
+                            location.href = "changer_info.php";
                         };
                     </script>
 

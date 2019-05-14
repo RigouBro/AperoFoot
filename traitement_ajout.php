@@ -37,8 +37,5 @@ $req->execute(array(
 
 echo 'L utilisateur a bien été ajouté !';
 $req->closeCursor();
-header('Location:connexion.php');
-exit();
-
 pied();
 ?>

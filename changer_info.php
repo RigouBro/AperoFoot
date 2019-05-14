@@ -1,3 +1,12 @@
+
+<?php
+include("mise_en_page.php");
+
+entete();
+
+menu_nav();
+?>
+
 <div class="col2 col_form">
 		<h3 class="titre_formulaire">Inscription</h3>
 		<form action="traitement_changer.php" method="post">
@@ -37,32 +46,19 @@
 		
 			</p>
 			<p class="membre_formulaire">
-
-				<label for="password">
-					Nouvelle ville
-					<span class="required">*</span>
-				</label>
-				<input type="text" class="input_texte" name="nouvelle_ville" id="reg_password" autocomplete="password">
-
-			</p>
-			<p class="membre_formulaire">
-				
-				<label for="password">
-					Nouvelle adresse
-					<span class="required">*</span>
-				</label>
-				<input type="test" class="input_texte" name="nouvelle_adresse" id="reg_password" autocomplete="password">
-
-			</p>
-			<p class="membre_formulaire">
 				<button type="submit" class="bouton_formulaire" id="bouton_formulaire" name="login" value="S'enregistrer">S'enregistrer</button>
 
 				<script type="text/javascript">
     document.getElementById("bouton_formulaire").onclick = function () {
         location.href = "traitement_ajout.php";
     };
-</script>'
+</script>
 			</p>
 		</form>
 
 </div>
+    
+<?php
+pied();
+
+?>
