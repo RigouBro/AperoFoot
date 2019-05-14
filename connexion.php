@@ -36,41 +36,35 @@ menu_nav();
 	</div>
 	<div class="col2 col_form">
 		<h3 class="titre_formulaire">Inscription</h3>
+
+       	<form action="traitement_ajout.php" method="post">
 			<div class="membre_formulaire">
-				<form action="traitement_ajout.php" method="post">
 				<label for="adresse_mail">
 					Adresse de messagerie
 					<span class="required">*</span>
 				</label>
 				<input type="text" class="input_texte" name="adresse_mail" id="reg_adresse_mail" autocomplete="apero@foot.fr" >
-			</form>
 			</div>
 			<div class="membre_formulaire">
-				<form action="traitement_ajout.php" method="post">
 				<label for="nom">
 					Nom
 					<span class="required">*</span>
 				</label>
 				<input type="text" class="input_texte" name="nom" id="nom" autocomplete="Apero">
-			</form>
 			</div>
 			<div class="membre_formulaire">
-				<form action="traitement_ajout.php" method="post">
 				<label for="prenom">
 					Prénom
 					<span class="required">*</span>
 				</label>
 				<input type="text" class="input_texte" name="prenom" id="prenom" autocomplete="Foot">
-			</form>
 			</div>
 			<div class="membre_formulaire">
-				<form action="traitement_ajout.php" method="post">
 				<label for="password">
 					Mot de passe
 					<span class="required">*</span>
 				</label>
 				<input type="password" class="input_texte" name="password" id="reg_password" autocomplete="password">
-			</form>
 			</div>
 			<div class="membre_formulaire">
 				<button type="submit" class="bouton_formulaire" name="login" value="S'enregistrer">S'enregistrer</button>

@@ -6,7 +6,7 @@ include("mise_en_page.php");
 entete();
 
 
-if(!isset($_POST['nom']) OR !isset($_POST['prenom']) OR !isset($_POST['password']) OR !isset($_POST['email'])) {
+if(!isset($_POST['nom']) OR !isset($_POST['prenom']) OR !isset($_POST['password']) OR !isset($_POST['adresse_mail'])) {
 	header('Location: connexion.php');
 	exit();
 }
@@ -14,12 +14,12 @@ if(!isset($_POST['nom']) OR !isset($_POST['prenom']) OR !isset($_POST['password'
 
 $nom=$_POST['nom'];
 $prenom=$_POST['prenom'];
-$password=$_POST['passowrd'];
-$email=$_POST['email'];
+$password=$_POST['password'];
+$email=$_POST['adresse_mail'];
 
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=pdo;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=aperofoot;charset=utf8', 'root', '');
 }
 catch(Exception $e)
 {
@@ -27,13 +27,11 @@ catch(Exception $e)
 }
 
 
-$req = $bdd->prepare('INSERT INTO user(n_user, password, nom, prenom, email, n_tel) VALUES(:n_user, :password, :nom, :prenom, :email, n_tel)');
+$req = $bdd->prepare('INSERT INTO user(password, nom, prenom, email) VALUES(:password, :nom, :prenom, :email');
 $req->execute(array(
-	'n_user' => $nom,
 	'password' => $password,
 	'nom' => $nom,
 	'email' => $email,
-	'n_tel' => NULL,
 	'prenom' => $prenom
 	));
 
