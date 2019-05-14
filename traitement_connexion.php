@@ -17,13 +17,13 @@ $password= $_POST['password'];
 session_start();
 $ok=0;
 
-$bdd = new PDO('mysql: host=localhost ;dbname=aperofoot ;charset=utf8', 'root', '');
+$bdd = new PDO('mysql: host=localhost ; dbname=aperofoot; charset=utf8', 'root', '');
 
 
 
 
 $requete =  $bdd->query('SELECT id FROM user WHERE email = "'.$adresse_mail.'" && password = "'.$password.'"');
-if ( $requete -> rowCount() == 0){
+if ( $requete -> columnCount() == 0){
 echo 'Mauvais pseudo ou mot de passe';
 header('Location: connexion.php');
 exit();
