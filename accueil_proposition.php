@@ -14,7 +14,7 @@ menu_nav();
 
 
 <?php
-    if (isset($_SESSION['id']) && isset($_SESSION['password'])
+    if (isset($_SESSION['id']) && isset($_SESSION['password']))
     {
 ?>
     <div class="content_form">
