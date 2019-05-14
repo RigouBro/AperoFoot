@@ -19,7 +19,7 @@ if (isset($_COOKIE['id'])){
 
 
 <?php
-if (isset($_SESSION['id']){
+    if (isset($_SESSION['id'])){
 ?>
     <div class="content_form">
         <h2 class="titre_proposition">Quoi de mieux que des amis pour regarder un match ?</h2>

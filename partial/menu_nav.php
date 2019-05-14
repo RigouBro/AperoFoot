@@ -13,7 +13,7 @@
 
 }
      
-    if (isset($_SESSION['id']){
+     if (isset($_SESSION['id'])){
         ?>
         <a href="mon_compte.php" class="lien_menu_principal">Mon compte</a>
         <?php

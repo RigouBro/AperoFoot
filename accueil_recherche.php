@@ -20,7 +20,7 @@ if (isset($_COOKIE['id'])){
 
 
 <?php
-if (isset($_SESSION['id']){
+    if (isset($_SESSION['id'])){
     ?>
     
 
